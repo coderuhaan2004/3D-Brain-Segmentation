@@ -2,8 +2,6 @@
 
 This repository provides a streamlined workflow for **running FastSurferCNN** for brain MRI segmentation and **visualizing the results in InVesalius**.
 
----
-
 ## 📌 **Overview**  
 
 - **FastSurferCNN**: A deep-learning-based tool for fast whole-brain segmentation of MRI scans.  
@@ -13,8 +11,6 @@ This guide walks through:
 👉 Running **FastSurferCNN** on an MRI scan  
 👉 Converting the output into a **visualizable format**  
 👉 Loading and analyzing the results in **InVesalius**  
-
----
 
 ## 🚀 **Installation**  
 
@@ -35,8 +31,6 @@ pip install -r requirements.txt  # Install dependencies
 Download and install InVesalius from:  
 👉 [https://invesalius.github.io/download/](https://invesalius.github.io/download/)  
 
----
-
 ## 🏃 **Running FastSurferCNN on MRI Data**  
 
 Make sure your input MRI scan is in **NIfTI format (.nii or .nii.gz)**.  
@@ -54,8 +48,6 @@ python FastSurferCNN.py --i input.nii.gz --o output_dir
 mri_convert output_dir/aseg.auto.mgz output_dir/aseg.nii.gz
 ```
 
----
-
 ## 🔦 **Visualizing in InVesalius**  
 
 1️⃣ Open **InVesalius**  
@@ -66,8 +58,6 @@ mri_convert output_dir/aseg.auto.mgz output_dir/aseg.nii.gz
 🟢 **Optional:** Overlay segmentation on original MRI  
 - Load `mri_orig.nii.gz`  
 - Set segmentation mask transparency  
-
----
 
 ## 🛠 **Troubleshooting**  
 
@@ -81,14 +71,10 @@ python FastSurferCNN.py --i input.nii.gz --o output_dir --no_cuda
 - Ensure you converted `.mgz` to `.nii.gz`  
 - Adjust **contrast & opacity** settings  
 
----
-
 ## 📜 **References**  
 
 - [FastSurfer GitHub](https://github.com/Deep-MI/FastSurfer)  
 - [InVesalius Official Website](https://invesalius.github.io/)  
-
----
 
 ## ✨ **Contributions & Issues**  
 
