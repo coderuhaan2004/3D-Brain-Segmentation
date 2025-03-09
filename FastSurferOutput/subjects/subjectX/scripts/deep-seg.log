@@ -1,0 +1,98 @@
+=========================================================
+Start of the log for a new run_fastsurfer.sh invocation
+=========================================================
+Version: 2.4.2+7e53343
+Sat Mar  8 18:04:04 UTC 2025
+
+Log file for FastSurfer pipeline, run_fastsurfer.sh and segmentation(s)
+python3.10 -s /fastsurfer/FastSurferCNN/run_prediction.py --t1 /data/origin.mgz --asegdkt_segfile /output/aparc.DKTatlas+aseg.deep.mgz --conformed_name /output/subjects/subjectX/mri/orig.mgz --brainmask_name /output/subjects/subjectX/mri/mask.mgz --aseg_name /output/subjects/subjectX/mri/aseg.auto_noCCseg.mgz --sid subjectX --seg_log /output/subjects/subjectX/scripts/deep-seg.log --vox_size min --batch_size 1 --viewagg_device auto --device auto --threads 4
+[INFO: run_prediction.py:  647]: Checking or downloading default checkpoints ...
+[INFO: common.py:  820]: Single subject with absolute file path for input.
+ERROR: FastSurfer asegdkt segmentation failed.
+=========================================================
+Start of the log for a new run_fastsurfer.sh invocation
+=========================================================
+Version: 2.4.2+7e53343
+Sat Mar  8 18:11:38 UTC 2025
+
+Log file for FastSurfer pipeline, run_fastsurfer.sh and segmentation(s)
+python3.10 -s /fastsurfer/FastSurferCNN/run_prediction.py --t1 /data/origin.mgz --asegdkt_segfile /output/subjects/subjectX/mri/aparc.DKTatlas+aseg.deep.mgz --conformed_name /output/subjects/subjectX/mri/orig.mgz --brainmask_name /output/subjects/subjectX/mri/mask.mgz --aseg_name /output/subjects/subjectX/mri/aseg.auto_noCCseg.mgz --sid subjectX --seg_log /output/subjects/subjectX/scripts/deep-seg.log --vox_size min --batch_size 1 --viewagg_device auto --device auto --threads 4 --sd /output/subjects
+[INFO: run_prediction.py:  647]: Checking or downloading default checkpoints ...
+[INFO: common.py:  820]: Single subject with absolute file path for input.
+[INFO: common.py:  878]: Analyzing single subject /data/origin.mgz
+[INFO: common.py:  979]: Output will be stored in Subjects Directory: /output/subjects
+[INFO: common.py:  106]: Using device: cpu
+[INFO: run_prediction.py:  245]: Running view aggregation on cpu
+[INFO: inference.py:  200]: Loading checkpoint /fastsurfer/checkpoints/aparc_vinn_coronal_v2.0.0.pkl
+[INFO: inference.py:  200]: Loading checkpoint /fastsurfer/checkpoints/aparc_vinn_sagittal_v2.0.0.pkl
+[INFO: inference.py:  200]: Loading checkpoint /fastsurfer/checkpoints/aparc_vinn_axial_v2.0.0.pkl
+[INFO: run_prediction.py:  324]: Successfully loaded image from /data/origin.mgz.
+[INFO: run_prediction.py:  441]: Output image directory /output/subjects/subjectX/mri/orig does not exist. Creating it now...
+[INFO: run_prediction.py:  454]: Successfully saved image   as /output/subjects/subjectX/mri/orig/001.mgz.
+[INFO: conform.py:  823]: The input image is not conformed.
+[INFO: conform.py:  826]: A min-conformedconformed image must satisfy the following criteria:
+[INFO: conform.py:  828]:  - Number of Dimensions 3        : True
+[INFO: conform.py:  828]:  - Dimensions 256x256x256        : BUT image dimensions (256, 256, 180)
+[INFO: conform.py:  828]:  - Voxel Size 1.0x1.0x1.0        : True
+[INFO: conform.py:  828]:  - Orientation LIA               : BUT strict: [[1. 0. 0.] [0. 1. 0.] [0. 0. 1.]]
+[INFO: conform.py:  828]:  - Dtype uint8                   : BUT dtype >f4
+[INFO: run_prediction.py:  337]: Conforming image
+[INFO: run_prediction.py:  454]: Successfully saved image   as /output/subjects/subjectX/mri/orig.mgz.
+[INFO: run_prediction.py:  400]: Run coronal prediction
+[INFO: dataset.py:   78]: Loading Coronal with input voxelsize (1.0, 1.0)
+[INFO: inference.py:  408]: Inference on 256 batches for coronal successful
+[INFO: inference.py:  469]: Coronal inference on /data/origin.mgz finished in 290.1783 seconds
+[INFO: run_prediction.py:  400]: Run sagittal prediction
+[INFO: dataset.py:   69]: Loading Sagittal with input voxelsize (1.0, 1.0)
+[INFO: inference.py:  408]: Inference on 256 batches for sagittal successful
+[INFO: inference.py:  469]: Sagittal inference on /data/origin.mgz finished in 380.8323 seconds
+[INFO: run_prediction.py:  400]: Run axial prediction
+[INFO: dataset.py:   74]: Loading Axial with input voxelsize (1.0, 1.0)
+[INFO: inference.py:  408]: Inference on 256 batches for axial successful
+[INFO: inference.py:  469]: Axial inference on /data/origin.mgz finished in 398.4777 seconds
+[INFO: run_prediction.py:  454]: Successfully saved image   as /output/subjects/subjectX/mri/aparc.DKTatlas+aseg.deep.mgz.
+[INFO: run_prediction.py:  724]: Creating brainmask based on segmentation...
+[INFO: run_prediction.py:  454]: Successfully saved image   as /output/subjects/subjectX/mri/mask.mgz.
+[INFO: run_prediction.py:  743]: Creating aseg based on segmentation...
+[INFO: run_prediction.py:  454]: Successfully saved image   as /output/subjects/subjectX/mri/aseg.auto_noCCseg.mgz.
+[INFO: run_prediction.py:  762]: Running volume-based QC check on segmentation...
+INFO: Running N4 bias-field correction...
+python3.10 -s /fastsurfer/recon_surf/N4_bias_correct.py --in /output/subjects/subjectX/mri/orig.mgz --rescale /output/subjects/subjectX/mri/orig_nu.mgz --aseg /output/subjects/subjectX/mri/aseg.auto_noCCseg.mgz --threads 4
+
+N4 Bias Correction Parameters:
+
+- verbosity: -1
+- input volume: /output/subjects/subjectX/mri/orig.mgz
+- output volume: do not save
+- rescaled volume: /output/subjects/subjectX/mri/orig_nu.mgz
+- mask: default (>0)
+- aseg: /output/subjects/subjectX/mri/aseg.auto_noCCseg.mgz
+- shrink factor: 4
+- number fitting levels: 4
+- number iterations: 50
+- convergence threshold: 0.0
+- threads: 4
+read MGZ (FreeSurfer) image via nibabel...
+executing N4 correction ...
+- mask: ones (default)
+normalize WM to 105.0 (find WM from aseg)
+read MGZ (FreeSurfer) image via nibabel...
+- source white matter intensity: 103.12
+- m: 0.9892
+converting rescaled to UCHAR
+writing PosixPath: /output/subjects/subjectX/mri/orig_nu.mgz
+write MGZ (FreeSurfer) image via nibabel...
+python3.10 -s /fastsurfer/FastSurferCNN/segstats.py --segfile /output/subjects/subjectX/mri/aparc.DKTatlas+aseg.deep.mgz --segstatsfile /output/subjects/subjectX/stats/aseg+DKT.stats --normfile /output/subjects/subjectX/mri/orig_nu.mgz --threads 4 --empty --excludeid 0 --sd /output/subjects --sid subjectX --ids 2 4 5 7 8 10 11 12 13 14 15 16 17 18 24 26 28 31 41 43 44 46 47 49 50 51 52 53 54 58 60 63 77 251 252 253 254 255 1002 1003 1005 1006 1007 1008 1009 1010 1011 1012 1013 1014 1015 1016 1017 1018 1019 1020 1021 1022 1023 1024 1025 1026 1027 1028 1029 1030 1031 1034 1035 2002 2003 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025 2026 2027 2028 2029 2030 2031 2034 2035 --lut /fastsurfer/FastSurferCNN/config/FreeSurferColorLUT.txt measures --compute Mask(/output/subjects/subjectX/mri/mask.mgz) BrainSeg BrainSegNotVent SupraTentorial SupraTentorialNotVent SubCortGray rhCerebralWhiteMatter lhCerebralWhiteMatter CerebralWhiteMatter
+Traceback (most recent call last):
+  File "/fastsurfer/FastSurferCNN/segstats.py", line 2503, in <module>
+    sys.exit(main(opts))
+  File "/fastsurfer/FastSurferCNN/segstats.py", line 902, in main
+    out = pv_calc(seg_data, pv_data, norm_data, labels, return_maps=save_maps, **kwargs)
+  File "/fastsurfer/FastSurferCNN/segstats.py", line 1868, in pv_calc
+    stds = {lab: get_std(lab, nvox) for lab, nvox in robust_vc_it if nvox > eps}
+  File "/fastsurfer/FastSurferCNN/segstats.py", line 1868, in <dictcomp>
+    stds = {lab: get_std(lab, nvox) for lab, nvox in robust_vc_it if nvox > eps}
+  File "/fastsurfer/FastSurferCNN/segstats.py", line 1866, in get_std
+    return np.sqrt((sums_2[lab] - means[lab] * sums[lab]) / (nvox - 1))
+ZeroDivisionError: float division by zero
+ERROR: asegdkt statsfile generation failed!

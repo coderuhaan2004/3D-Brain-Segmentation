@@ -1,0 +1,128 @@
+2.4.2+7e53343 (stable)
+==========
+git status:
+==========
+## stable...upstream/stable
+
+
+==========
+checkpoints:
+==========
+ab1339037fe72a96474918e3e43230ea  checkpoints/HypVINN_axial_v1.1.0.pkl
+7d400765666150f14389764703f837f2  checkpoints/HypVINN_sagittal_v1.1.0.pkl
+fa699af3d60ca9ee06950e62ed04c288  checkpoints/aparc_vinn_coronal_v2.0.0.pkl
+840f87fa05cffdbf8b9d7e385acc76be  checkpoints/CerebNet_coronal_v1.0.0.pkl
+f28ab87df75492ad91f9ff5e49a2583c  checkpoints/aparc_vinn_sagittal_v2.0.0.pkl
+55e30ae9c3e888bd3be3fccfbc7fbe04  checkpoints/HypVINN_coronal_v1.1.0.pkl
+eb836ed90893dc32950e83c8b060a360  checkpoints/CerebNet_sagittal_v1.0.0.pkl
+b62511c32e7ce059a68bb4e2728d5546  checkpoints/CerebNet_axial_v1.0.0.pkl
+f16e78dd069eed2ec659674e0fdb697b  checkpoints/aparc_vinn_axial_v2.0.0.pkl
+==========
+python packages:
+==========
+Package                  Version      Location                           Installer
+------------------------ ------------ ---------------------------------- ---------
+absl-py                  2.1.0        /venv/lib/python3.10/site-packages conda
+Brotli                   1.1.0        /venv/lib/python3.10/site-packages conda
+cached-property          1.5.2        /venv/lib/python3.10/site-packages conda
+certifi                  2024.12.14   /venv/lib/python3.10/site-packages conda
+cffi                     1.17.1       /venv/lib/python3.10/site-packages conda
+charset-normalizer       3.4.1        /venv/lib/python3.10/site-packages conda
+click                    8.1.8        /venv/lib/python3.10/site-packages pip
+colorama                 0.4.6        /venv/lib/python3.10/site-packages conda
+contourpy                1.3.1        /venv/lib/python3.10/site-packages conda
+cycler                   0.12.1       /venv/lib/python3.10/site-packages conda
+Deprecated               1.2.18       /venv/lib/python3.10/site-packages pip
+filelock                 3.17.0       /venv/lib/python3.10/site-packages pip
+fonttools                4.56.0       /venv/lib/python3.10/site-packages conda
+fsspec                   2025.2.0     /venv/lib/python3.10/site-packages pip
+grpcio                   1.67.1       /venv/lib/python3.10/site-packages conda
+h2                       4.2.0        /venv/lib/python3.10/site-packages conda
+h5py                     3.12.1       /venv/lib/python3.10/site-packages conda
+hpack                    4.1.0        /venv/lib/python3.10/site-packages conda
+humanize                 4.11.0       /venv/lib/python3.10/site-packages pip
+hyperframe               6.1.0        /venv/lib/python3.10/site-packages conda
+idna                     3.10         /venv/lib/python3.10/site-packages conda
+imagecodecs              2024.12.30   /venv/lib/python3.10/site-packages conda
+imageio                  2.37.0       /venv/lib/python3.10/site-packages conda
+importlib_metadata       8.6.1        /venv/lib/python3.10/site-packages conda
+importlib_resources      6.5.2        /venv/lib/python3.10/site-packages conda
+Jinja2                   3.1.5        /venv/lib/python3.10/site-packages pip
+joblib                   1.4.2        /venv/lib/python3.10/site-packages conda
+kiwisolver               1.4.7        /venv/lib/python3.10/site-packages conda
+lapy                     1.2.0        /venv/lib/python3.10/site-packages conda
+lazy_loader              0.4          /venv/lib/python3.10/site-packages conda
+Markdown                 3.6          /venv/lib/python3.10/site-packages conda
+markdown-it-py           3.0.0        /venv/lib/python3.10/site-packages pip
+MarkupSafe               3.0.2        /venv/lib/python3.10/site-packages conda
+matplotlib               3.10.0       /venv/lib/python3.10/site-packages conda
+mdurl                    0.1.2        /venv/lib/python3.10/site-packages pip
+mpmath                   1.3.0        /venv/lib/python3.10/site-packages pip
+munkres                  1.1.4        /venv/lib/python3.10/site-packages
+narwhals                 1.25.2       /venv/lib/python3.10/site-packages conda
+networkx                 3.4.2        /venv/lib/python3.10/site-packages conda
+nibabel                  5.3.2        /venv/lib/python3.10/site-packages conda
+numpy                    1.26.4       /venv/lib/python3.10/site-packages conda
+nvidia-cublas-cu12       12.6.4.1     /venv/lib/python3.10/site-packages pip
+nvidia-cuda-cupti-cu12   12.6.80      /venv/lib/python3.10/site-packages pip
+nvidia-cuda-nvrtc-cu12   12.6.77      /venv/lib/python3.10/site-packages pip
+nvidia-cuda-runtime-cu12 12.6.77      /venv/lib/python3.10/site-packages pip
+nvidia-cudnn-cu12        9.5.1.17     /venv/lib/python3.10/site-packages pip
+nvidia-cufft-cu12        11.3.0.4     /venv/lib/python3.10/site-packages pip
+nvidia-curand-cu12       10.3.7.77    /venv/lib/python3.10/site-packages pip
+nvidia-cusolver-cu12     11.7.1.2     /venv/lib/python3.10/site-packages pip
+nvidia-cusparse-cu12     12.5.4.2     /venv/lib/python3.10/site-packages pip
+nvidia-cusparselt-cu12   0.6.3        /venv/lib/python3.10/site-packages pip
+nvidia-nccl-cu12         2.21.5       /venv/lib/python3.10/site-packages pip
+nvidia-nvjitlink-cu12    12.6.85      /venv/lib/python3.10/site-packages pip
+nvidia-nvtx-cu12         12.6.77      /venv/lib/python3.10/site-packages pip
+packaging                24.2         /venv/lib/python3.10/site-packages conda
+pandas                   2.2.3        /venv/lib/python3.10/site-packages conda
+pillow                   11.1.0       /venv/lib/python3.10/site-packages conda
+pip                      25.0.1       /venv/lib/python3.10/site-packages conda
+plotly                   6.0.0        /venv/lib/python3.10/site-packages conda
+protobuf                 5.28.3       /venv/lib/python3.10/site-packages conda
+psutil                   6.1.1        /venv/lib/python3.10/site-packages conda
+pycparser                2.22         /venv/lib/python3.10/site-packages conda
+Pygments                 2.19.1       /venv/lib/python3.10/site-packages pip
+pyparsing                3.2.1        /venv/lib/python3.10/site-packages conda
+PySide6                  6.8.2        /venv/lib/python3.10/site-packages
+PySocks                  1.7.1        /venv/lib/python3.10/site-packages conda
+python-dateutil          2.9.0.post0  /venv/lib/python3.10/site-packages conda
+pytz                     2024.1       /venv/lib/python3.10/site-packages conda
+PyWavelets               1.8.0        /venv/lib/python3.10/site-packages conda
+PyYAML                   6.0.2        /venv/lib/python3.10/site-packages conda
+requests                 2.32.3       /venv/lib/python3.10/site-packages conda
+rich                     13.9.4       /venv/lib/python3.10/site-packages pip
+scikit-image             0.25.1       /venv/lib/python3.10/site-packages conda
+scikit-learn             1.6.1        /venv/lib/python3.10/site-packages conda
+scikit-sparse            0.4.14       /venv/lib/python3.10/site-packages conda
+scipy                    1.15.1       /venv/lib/python3.10/site-packages conda
+setuptools               75.8.0       /venv/lib/python3.10/site-packages
+shellingham              1.5.4        /venv/lib/python3.10/site-packages pip
+shiboken6                6.8.2        /venv/lib/python3.10/site-packages
+SimpleITK                2.4.1        /venv/lib/python3.10/site-packages pip
+six                      1.17.0       /venv/lib/python3.10/site-packages conda
+sympy                    1.13.1       /venv/lib/python3.10/site-packages pip
+tensorboard              2.18.0       /venv/lib/python3.10/site-packages conda
+tensorboard_data_server  0.7.0        /venv/lib/python3.10/site-packages conda
+threadpoolctl            3.5.0        /venv/lib/python3.10/site-packages conda
+tifffile                 2025.1.10    /venv/lib/python3.10/site-packages conda
+torch                    2.6.0+cu126  /venv/lib/python3.10/site-packages pip
+torchio                  0.20.4       /venv/lib/python3.10/site-packages pip
+torchvision              0.21.0+cu126 /venv/lib/python3.10/site-packages pip
+tornado                  6.4.2        /venv/lib/python3.10/site-packages conda
+tqdm                     4.67.1       /venv/lib/python3.10/site-packages conda
+triton                   3.2.0        /venv/lib/python3.10/site-packages pip
+typer                    0.15.1       /venv/lib/python3.10/site-packages pip
+typing_extensions        4.12.2       /venv/lib/python3.10/site-packages conda
+tzdata                   2025.1       /venv/lib/python3.10/site-packages conda
+unicodedata2             16.0.0       /venv/lib/python3.10/site-packages conda
+urllib3                  2.3.0        /venv/lib/python3.10/site-packages conda
+Werkzeug                 3.1.3        /venv/lib/python3.10/site-packages conda
+wheel                    0.45.1       /venv/lib/python3.10/site-packages
+wrapt                    1.17.2       /venv/lib/python3.10/site-packages pip
+yacs                     0.1.8        /venv/lib/python3.10/site-packages conda
+zipp                     3.21.0       /venv/lib/python3.10/site-packages conda
+zstandard                0.23.0       /venv/lib/python3.10/site-packages
+
